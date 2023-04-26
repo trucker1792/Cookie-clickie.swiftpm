@@ -10,6 +10,7 @@ struct ContentView: View {
             Text("total clicks = \(counter)")
                 .font(.largeTitle)
                 .foregroundColor(.green)
+            Text("Test")
             HStack{
                 Button(action: {counter += 1}, label: {
                     Text("click here to generate clicks")
