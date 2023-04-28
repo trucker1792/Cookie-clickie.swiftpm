@@ -6,7 +6,7 @@ struct ContentView: View {
     @State var shouldHide = false
     var body: some View {
         VStack {
-            Image("cookie")
+            Image("cookie3")
             Text("total clicks = \(counter)")
                 .font(.largeTitle)
                 .foregroundColor(.green)
@@ -14,7 +14,7 @@ struct ContentView: View {
             HStack{
                 Button(action: {counter += 1}, label: {
                     Text("click here to generate clicks")
-                        .foregroundColor(.white)
+                        .foregroundColor(.blue)
                 })
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                     Text("UPGRADE!")
