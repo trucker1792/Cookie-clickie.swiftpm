@@ -6,11 +6,7 @@ struct ContentView: View {
     @State var shouldHide = false
     var body: some View {
         VStack {
-            
-            
-            
-            
-            Image("Cookie")
+            Image("cookie")
             Text("total clicks = \(counter)")
                 .font(.largeTitle)
                 .foregroundColor(.green)
@@ -38,4 +34,3 @@ struct ContentView: View {
         }
     }
 
-//gvljhbvjkhbjhbkjkjv jhljhb 
