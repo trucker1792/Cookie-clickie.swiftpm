@@ -16,11 +16,12 @@ struct ContentView: View {
                     Text("click here to generate clicks")
                         .foregroundColor(.blue)
                 })
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(action: {counter -= 50}, label: {
                     Text("UPGRADE!")
                         .foregroundColor(.red)
                         .font(.title2)
                         .buttonStyle(.bordered)
+                        .hidden()
                 })
             }
             //tried to make a hiding button that appears when youi have 69 clicks that does something idk
