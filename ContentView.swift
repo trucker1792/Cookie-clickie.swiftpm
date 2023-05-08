@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var counter = 0
+    @State var cpc = 1
     @State var showAlert = false
     @State var shouldHide = false
     var body: some View {
@@ -12,11 +13,11 @@ struct ContentView: View {
                 .foregroundColor(.green)
             Text("Test")
             HStack{
-                Button(action: {counter += 1}, label: {
+                Button(action: {counter += cpc}, label: {
                     Text("click here to generate clicks")
                         .foregroundColor(.blue)
                 })
-                Button(action: {counter -= 50}, label: {
+                Button(action: {counter -= 50; cpc += 1}, label: {
                     Text("UPGRADE!")
                         .foregroundColor(.red)
                         .font(.title2)
