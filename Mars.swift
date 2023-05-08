@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+
 struct Mars: View {
     var body: some View {
         VStack {
