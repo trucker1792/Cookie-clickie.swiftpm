@@ -1,5 +1,6 @@
 import SwiftUI
-
+//@main
+//class AppDelegate: UIResponder, UIApplicationDelegate {
 struct ContentView: View {
     @State var counter = 0
     @State var cpc = 1
@@ -22,20 +23,31 @@ struct ContentView: View {
                         .foregroundColor(.red)
                         .font(.title2)
                         .buttonStyle(.bordered)
-                        .hidden()
+                        .disabled(true)
+                    //                            .if counter >= 50 {disabled(false)}
+                    // i dont know how to do this
                 })
+                //                    if counter < 50 { .disabled(true)}
+                //                    else {disabled(false)}
             }
-            //tried to make a hiding button that appears when youi have 69 clicks that does something idk
-//            Button("click if you have 69 clicks") { showAlert.toggle() }.alert("sssssss", isPresented: $showAlert){} {self.shouldHide = true }
-////            Button("click if you have 69 clicks", action: if counter == 69 {
-////                { showAlert.toggle() }.alert("GOODJOB", isPresented: $showAlert){}
-////                    .buttonStyle(.bordered)
-////            })
-//            if counter == 69 { showAlert.toggle()}.alert("sssssss", isPresented: $showAlert){}
+            if counter == 69 {Button("funny", action: {counter -= 69; cpc += 20})
+                    .disabled(false)
+                else counter != 69 {Button("funny", action: {counter -= 69; cpc += 20})
+                        .disabled(true)
+                    .hidden()}
+                //                if counter == 69 {Button("funny number", action: counter -= 69; cpc += 20)
+                //                if counter == 69 { Button(funny NumberFormatter, action: counter -= 69; cpc += 20;{ showAlert.toggle() }.alert("wow funnyn nice", isPresented: $showAlert){} {self.shouldHide = true })}
+                //tried to make a hiding button that appears when youi have 69 clicks that does something idk
+                //            Button("click if you have 69 clicks") { showAlert.toggle() }.alert("sssssss", isPresented: $showAlert){} {self.shouldHide = true }
+                ////            Button("click if you have 69 clicks", action: if counter == 69 {
+                ////                { showAlert.toggle() }.alert("GOODJOB", isPresented: $showAlert){}
+                ////                    .buttonStyle(.bordered)
+                ////            })
+                //            if counter == 69 { showAlert.toggle()}.alert("sssssss", isPresented: $showAlert){}
             }
         }
     }
-
+}
 
 
 
