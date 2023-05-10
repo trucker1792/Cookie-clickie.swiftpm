@@ -32,9 +32,10 @@ struct ContentView: View {
             }
             if counter == 69 {Button("funny", action: {counter -= 69; cpc += 20})
                     .disabled(false)
-                else counter != 69 {Button("funny", action: {counter -= 69; cpc += 20})
-                        .disabled(true)
-                    .hidden()}
+            } else if counter != 69 {Button("funny", action: {counter -= 69; cpc += 20})
+                    .disabled(true)
+                    .hidden()
+            }
                 //                if counter == 69 {Button("funny number", action: counter -= 69; cpc += 20)
                 //                if counter == 69 { Button(funny NumberFormatter, action: counter -= 69; cpc += 20;{ showAlert.toggle() }.alert("wow funnyn nice", isPresented: $showAlert){} {self.shouldHide = true })}
                 //tried to make a hiding button that appears when youi have 69 clicks that does something idk
@@ -47,7 +48,7 @@ struct ContentView: View {
             }
         }
     }
-}
+
 
 
 
