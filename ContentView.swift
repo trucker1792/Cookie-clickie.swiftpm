@@ -19,16 +19,16 @@ struct ContentView: View {
             Text("Test")
             HStack{
                 Button {
-                    <#code#>
+                    counter += cpc
                 } label: {
-                    <#code#>
+                    Text("click here to generate clicks")
                 }
 
-//                Button(action: {counter += cpc}, label: {
-//                    Text("click here to generate clicks")
-//                        .foregroundColor(.blue)
-//                })
-//                //                Button(action: {counter -= 50; cpc += 1}, label: {
+                Button(action: {counter += cpc}, label: {
+                    Text("click here to generate clicks")
+                        .foregroundColor(.blue)
+                })
+                //                Button(action: {counter -= 50; cpc += 1}, label: {
                 //                    Text("UPGRADE!")
                 //                        .foregroundColor(.red)
                 //                        .font(.title2)
