@@ -7,6 +7,7 @@ struct ContentView: View {
     @State var showAlert = false
     @State var shouldHide = false
     @State var MoonPoint = 0
+    
     var body: some View {
         VStack {
             Image("cookie3")
@@ -17,11 +18,17 @@ struct ContentView: View {
                 .foregroundColor(.green)
             Text("Test")
             HStack{
-                Button(action: {counter += cpc}, label: {
-                    Text("click here to generate clicks")
-                        .foregroundColor(.blue)
-                })
-                //                Button(action: {counter -= 50; cpc += 1}, label: {
+                Button {
+                    <#code#>
+                } label: {
+                    <#code#>
+                }
+
+//                Button(action: {counter += cpc}, label: {
+//                    Text("click here to generate clicks")
+//                        .foregroundColor(.blue)
+//                })
+//                //                Button(action: {counter -= 50; cpc += 1}, label: {
                 //                    Text("UPGRADE!")
                 //                        .foregroundColor(.red)
                 //                        .font(.title2)
@@ -54,28 +61,28 @@ struct ContentView: View {
             } else if counter <= 999 {Button("click me to go to moon! (1k points", action: {counter -= 0})
                     .disabled(true)
             }
-//            NavigationLink("press me") {
-//                        NewView()
+            //            NavigationLink("press me") {
+            //                        NewView()
             //nav links
-                    }
+        }
         if MoonPoint >= 1 {NavigationLink("moon travel"){Moon}
-                    .disabled(false)
+                .disabled(false)
         } else if MoonPoint == 0 {NavigationLink("moon trvael"){Moon}
-                    .disabled(true)
-                //ADD A THINGY TO TAKE YOU TO ANOTHER VIEW IWHT THE MOON
-                
-                //                if counter == 69 {Button("funny number", action: counter -= 69; cpc += 20)
-                //                if counter == 69 { Button(funny NumberFormatter, action: counter -= 69; cpc += 20;{ showAlert.toggle() }.alert("wow funnyn nice", isPresented: $showAlert){} {self.shouldHide = true })}
-                //tried to make a hiding button that appears when youi have 69 clicks that does something idk
-                //            Button("click if you have 69 clicks") { showAlert.toggle() }.alert("sssssss", isPresented: $showAlert){} {self.shouldHide = true }
-                ////            Button("click if you have 69 clicks", action: if counter == 69 {
-                ////                { showAlert.toggle() }.alert("GOODJOB", isPresented: $showAlert){}
-                ////                    .buttonStyle(.bordered)
-                ////            })
-                //            if counter == 69 { showAlert.toggle()}.alert("sssssss", isPresented: $showAlert){}
-            }
+                .disabled(true)
+            //ADD A THINGY TO TAKE YOU TO ANOTHER VIEW IWHT THE MOON
+            
+            //                if counter == 69 {Button("funny number", action: counter -= 69; cpc += 20)
+            //                if counter == 69 { Button(funny NumberFormatter, action: counter -= 69; cpc += 20;{ showAlert.toggle() }.alert("wow funnyn nice", isPresented: $showAlert){} {self.shouldHide = true })}
+            //tried to make a hiding button that appears when youi have 69 clicks that does something idk
+            //            Button("click if you have 69 clicks") { showAlert.toggle() }.alert("sssssss", isPresented: $showAlert){} {self.shouldHide = true }
+            ////            Button("click if you have 69 clicks", action: if counter == 69 {
+            ////                { showAlert.toggle() }.alert("GOODJOB", isPresented: $showAlert){}
+            ////                    .buttonStyle(.bordered)
+            ////            })
+            //            if counter == 69 { showAlert.toggle()}.alert("sssssss", isPresented: $showAlert){}
         }
     }
+}
 
 
 
