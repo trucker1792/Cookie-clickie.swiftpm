@@ -17,6 +17,12 @@ struct ContentView: View {
                 .foregroundColor(.green)
             Text("Test")
             HStack{
+                Button {
+                    counter += cpc
+                } label: {
+                    Text("click here to generate clicks")
+                }
+
                 Button(action: {counter += cpc}, label: {
                     Text("click here to generate clicks")
                         .foregroundColor(.blue)
