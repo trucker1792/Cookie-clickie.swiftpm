@@ -1,6 +1,5 @@
 import SwiftUI
-@main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+
     struct ContentView: View {
         @State var counter = 0
         @State var cpc = 1
@@ -70,4 +69,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     
-}
+
