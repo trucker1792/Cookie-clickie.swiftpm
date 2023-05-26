@@ -42,7 +42,7 @@ import SwiftUI
                         .disabled(true)
                         .hidden()
                 }
-                Image("moon")
+                Image("moon Small")
                 Text("click me to go to moon! (1k points")
                 if counter >= 1000 {Button("click me to go to moon! (1k points", action: {counter -= 1000; MoonPoint += 1})
                         .disabled(false)
@@ -59,14 +59,20 @@ import SwiftUI
             //        }
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+//Click and make it show up
 
+//Cookie image
+
+//Upgrade
+
+//Figure out how to resize images
+
+//69
+    
+//Critical error (2)
+
+//Moon
+
+//Mars
+
+// Easter for 420 with mario
