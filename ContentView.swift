@@ -36,9 +36,9 @@ import SwiftUI
                             .hidden()
                     }
                 }
-                if counter == 69 {Button("funny", action: {counter -= 69; cpc += 20})
+                if counter == 69 {Button("funny", action: {counter -= 69; cpc += 419})
                         .disabled(false)
-                } else if counter != 69 {Button("funny", action: {counter -= 69; cpc += 20})
+                } else if counter != 69 {Button("funny", action: {counter -= 69; cpc += 420})
                         .disabled(true)
                         .hidden()
                 }
@@ -51,28 +51,29 @@ import SwiftUI
                 }
                 
             }
-            //        if MoonPoint >= 1 {NavigationLink("moon travel"){Moon} .disabled(false)
-            //        } else if MoonPoint == 0 {NavigationLink("moon trvael"){Moon}
-            //                .disabled(true)
-            //
-            //
-            //        }
+                    if MoonPoint >= 1 {NavigationLink("moon travel"){Moon} .disabled(false)
+                    } else if MoonPoint == 0 {NavigationLink("moon trvael"){Moon}
+                            .disabled(true)
+            
+            
+                    }
         }
     }
-//Click and make it show up
 
-//Cookie image
+// Stretch 1: Click and make it show up
 
-//Upgrade
+// Stretch 2: Cookie image
 
-//Figure out how to resize images
+// Stretch 3: Upgrade
 
-//69
+// Stretch 4: Figure out how to resize images
+
+// Stretch 5: 69
     
-//Critical error (2)
+// Stretch 6: Critical error (2)
 
-//Moon
+// Stretch 7: Moon
 
-//Mars
+// Stretch 8: Mars
 
-// Easter for 420 with mario
+//  Stretch 9: Easter for 420,000 with mario
