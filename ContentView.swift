@@ -1,6 +1,8 @@
 import SwiftUI
 
-    struct ContentView: View {
+import Foundation
+
+struct ContentView: View {
         @State var counter = 0
         @State var cpc = 1
         @State var showAlert = false
